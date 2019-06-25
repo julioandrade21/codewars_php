@@ -1,0 +1,12 @@
+function partsSums($ls){
+	
+	array_push($ls, 0);
+	$sum = array_sum($ls);
+	
+	foreach($ls as $s){
+		$result[] = $sum;
+		$sum -= $s;
+	}
+	
+	return $result;
+}
